@@ -1,0 +1,208 @@
+#Arithmetic operators
+print("Write two integers: ")
+a,b=map(int,input().split())
+
+#Addition
+print(f"{a}+{b}={a+b}")
+
+#Subtraction
+print(f"{a}-{b}={a-b}")
+
+#Multiplication
+print(f"{a}*{b}={a*b}")
+
+#Division
+print(f"{a}/{b}={a/b}")
+
+#floor division
+print(f"{a}//{b}={a//b}")
+
+#Modulus
+print(f"{a}%{b}={a%b}")
+
+#Exponentiation
+print(f"{a}**{b}={a**b}")
+
+#assignment operators
+print("Write one integer: ")
+# Assignment 
+n = int(input())
+print(f"Initial Value of n: {n}")
+
+#Addition Assignment
+n += 5
+print(f"n after += 5: {n}")
+
+#Subtraction Assignment
+n -= 3
+print(f"n after -= 3: {n}")
+
+#Multiplication Assignment
+n *= 2
+print(f"n after *= 2: {n}")
+
+#Division Assignment 
+n /= 4
+print(f"n after /= 4: {n}")
+
+
+num = int(n)
+
+#Modulus Assignment 
+n %= 3
+print(f"n after %= 3: {n}")
+
+
+n+=1
+print(f"n after +=1: {n}")
+
+#Floor Division Assignment 
+n //= 2
+print(f"n after //= 2: {n}")
+
+#Exponentiation Assignment 
+n **= 3
+print(f"n after **= 3: {n}")
+
+
+#Bitwise operators
+print("Write two integers: ")
+a,b=map(int,input().split())
+
+#AND(&)
+print(f"{a}&{b}={a&b}")
+
+#OR(|)
+print(f"{a}|{b}={a|b}")
+
+#XOR(^)
+print(f"{a}^{b}={a^b}")
+
+#NOT(~)
+print(f"~{a}={~a}")
+
+#LEFT SHIFT(<<)
+print(f"{b}<<1={b<<1}")
+
+#RIGHT SHIFT(>>)
+print(f"{a}>>2={a>>2}")
+
+
+#Identity operators
+x=["cat","dog"]
+y=["cat","dog"]
+z=x
+
+print(x is z)
+print(x is not y)
+print(y is z)
+
+
+#Logical operators
+print("Give your age: ")
+age=int(input())
+
+if age>12 and age<60:
+    print("Eligible for Boat riding")
+else:
+    print("Not Eligible for boat riding")
+
+if age<12 or age>65:
+    print("Free food")
+else:
+    print("cost of food is 10$")
+ 
+if not (age>18):
+    print("Allowed if Guardian is present")
+
+#membership operators
+name=input("Enter your name:")
+print(f"Is 'a' in your name:{"a" in name}")
+print(f"Is 'y' not in your name:{"y" not in name}")
+
+#Relational operators
+print("Write two integers: ")
+x,y=map(int,input().split())
+
+if x>=y:
+    print("x greater than or equal to y")
+if x<=y:
+    print("x less than or equal to y")
+if x==y:
+    print("x equal to y")
+if x!=y:
+    print("x not equal to y")
+if x>y:
+    print("x greater than y")
+elif x<y:
+    print("x less than y")
+
+#control statements
+print("Write one integer: ")
+num = int(input())
+
+#if _else statement
+if num < 0:
+    ...  #pass statement
+    print("Negative number")
+
+elif num == 0:
+    print("Zero")
+
+else:
+    print("Positive number") 
+    
+    #Nested _if statement
+    if num % 2 == 0:
+        print("It is also even")
+        if num > 10:
+            print("It is greater than 10")      
+    else:
+        print("It is also odd")
+
+
+#for statement
+for i in range(num):
+
+    #break statement
+    if i==num//2:
+        break
+    print(num)
+
+#while statement
+count=1
+while count<=num:
+    #continue statement
+    if count==num//2:
+        continue
+    print(num)
+    count+=2
+
+
+#immutable object
+text = "Hello"
+print(id(text))
+text = text + " World"
+print(id(text))  # The ID has changed
+
+
+#infinite loop
+while True:
+    print("This will print forever")
+
+from itertools import count
+for i in count(start=0):
+    print(i)
+
+
+#ord and chr function
+print(ord('A'))
+print(chr(65))
+
+
+#is keyword or not
+import keyword
+word1="for"
+word2="apple"
+print(keyword.iskeyword(word1))#output:True
+print(keyword.iskeyword(word2))#output:False
